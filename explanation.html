@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Healthcare</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <link rel="stylesheet" href="styles\style1.css"/>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="index.html">Post-Pandemic Administration Policy</a>
+            </div>
+            <div class="collapse navbar-collapse" id="my-navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="data.html">Data</a></li>
+                    <li><a href="explanation.html">Explanation</a></li>
+                    <li><a href="conclusion.html">Conclusion</a></li>
+                    <li><a href="credits.html">Credits</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cover">
+        <img src="images/TECH200.png" title="Cover Image" alt="Artsy bright background">
+        <div class="cover-box">    
+            <h2>Covid-19 Healthcare</h2>
+            <h2>Explanation</h2>
+        </div>
+    </div>
+
+    <div class="container space-row"> 
+        <h2 id="header">Covid-19</h2>
+        <div class="row" >
+            <div class="col-sm-3"></div>
+            <div class="container col-sm-6 blue-box" id="red-box">
+                <p>Developments in technology have saved countless patients’ lives and also improves quality of life. And advancements in healthcare technology charter new procedures and organizational ways to improve the healthcare sphere like reducing costs and waste, predicting outbreaks, and increased efficiency and quality. That includes digitized health records. They provide key concise data to gain more medical knowledge while also to build on their treatments. </p>
+                <footer class="citation blockquote-footer" id="lead-para-citation"><a href="https://aimseducation.edu/blog/the-impact-of-technology-on-healthcare" target="_blank">(Source: Aims Education)</a></footer>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>  
+    </div>
+
+    <div class="container-fluid" id="showcase">
+        <div class="space-row">
+            <h4>COVID-19 United States Data</h4>
+            <p>For an idea of how data can be so helpful for so many here’s an example in the COVID-19 pandemic, “...multiple new experiments in data gathering and analysis have sprung up during the pandemic, experiments that might save thousands of lives before the crisis is over. And they may well prevent future pandemics from developing in the first place”.
+
+            And they soon found that the more data the better.
+            “By early February, the Open Covid-19 Data Working Group had assembled detailed records for 10,000 cases. Today an informal network of hundreds of volunteers has assembled records for more than a million cases in 142 countries around the world. It may well be the single most accurate portrait of the virus’s spread through the human population in existence”. This is huge. The better the accuracy, the more likely they can find a solution that can make an impact. And with all the samples, they cast such a wide net that they can see how people were affected from all over. This is basically a scientist's dream to have this much data. 
+            “Of course, the greatest value in that kind of data set lies in the clues it can give us about the future path of the disease and how that path can potentially be interrupted”.
+            
+            Conclusions:
+            With this data, scientists were able to draw conclusions such as,
+            “Life tables are what allowed us to see that Covid-19’s lethality has been disproportionately concentrated among the elderly, unlike the flu pandemic of 1918, which killed an unusual number of young adults”.
+            </p>
+            <footer class="image-citation blockquote-footer"><a href="https://www.nytimes.com/interactive/2020/06/10/magazine/covid-data.html" target="_blank">(Source: New York Times Magazine)</a></footer>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 my-graph">
+                <div id="my-graph"></div>
+                <script>
+function makeplot() {
+    Plotly.d3.csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us.csv", function(data){ processData(data)});
+};
+
+function processData(allRows) {
+    var x = [], y = [];
+
+    for (var i=0; i<allRows.length; i++) {
+    row = allRows[i];
+    x.push(row['date']);
+    y.push(row['cases']);
+    }
+    makePlotly(x,y);
+}
+
+function makePlotly(x,y){
+    var plotDiv = document.getElementById("plot");
+    var traces = [{
+        x: x,
+        y: y
+    }];
+    var customize = {
+        title: 'United States\' COVID-19 Cases', 
+        showlegend: false
+    };
+    var config = {
+        responsive: true,
+        displayModeBar: false
+    };
+
+    Plotly.newPlot('my-graph', traces, customize, config);
+};
+
+makeplot();
+
+                </script>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <footer class="graph-citation blockquote-footer space-row"><a href="https://github.com/nytimes/covid-19-data" target="_blank">(Source: New York Times Magazine Github)</a></footer>
+    </div>
+
+    <div class="lg-space-row">
+        <h4>
+            Ultimately, in our grandparents’ age this kind of occurrence did not happen because they did not have the resources available today. Today people around the world are more connected than ever, and that connection made this kind of data possible. The internet may have been around near our grandparents’ age, but today’s generation has far expanded it. This kind occurrence is unprecedented. Thousands of people came together in a world effort to help beat the virus. In triumphant fashion, they showed connectivity and longevity in their efforts and greatly accelerated the speed of science.
+        </h4>
+    </div>
+</body>
+</html>
