@@ -45,68 +45,7 @@
         </div>
     </div>
 
-    <div class="container-fluid" >
-        <div class="space-row">
-            <h3>Example of analyzing data of Covid-19 death rates in the United States</h3>
-            <br>
-            <p>For an idea of how data can be so helpful for so many here’s an example in the COVID-19 pandemic, “...multiple new experiments in data gathering and analysis have sprung up during the pandemic, experiments that might save thousands of lives before the crisis is over. And they may well prevent future pandemics from developing in the first place”.
-            And they soon found that the more data the better.
-            “By early February, the Open Covid-19 Data Working Group had assembled detailed records for 10,000 cases. Today an informal network of hundreds of volunteers has assembled records for more than a million cases in 142 countries around the world. It may well be the single most accurate portrait of the virus’s spread through the human population in existence”. This is huge. The better the accuracy, the more likely they can find a solution that can make an impact. And with all the samples, they cast such a wide net that they can see how people were affected from all over. This is basically a scientist's dream to have this much data. 
-            “Of course, the greatest value in that kind of data set lies in the clues it can give us about the future path of the disease and how that path can potentially be interrupted”.
-            <br><br>
-            <b></b>Conclusions:
-            With this data, scientists were able to draw conclusions such as,
-            “Life tables are what allowed us to see that Covid-19’s lethality has been disproportionately concentrated among the elderly, unlike the flu pandemic of 1918, which killed an unusual number of young adults”.
-            </p>
-            <footer class="image-citation blockquote-footer"><a href="https://www.nytimes.com/interactive/2020/06/10/magazine/covid-data.html" target="_blank">(Source: New York Times Magazine)</a></footer>
-        </div>
 
-        <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8 my-graph">
-                <div id="my-graph"></div>
-                <script>
-function makeplot() {
-    Plotly.d3.csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us.csv", function(data){ processData(data)});
-};
-
-function processData(allRows) {
-    var x = [], y = [];
-
-    for (var i=0; i<allRows.length; i++) {
-    row = allRows[i];
-    x.push(row['date']);
-    y.push(row['cases']);
-    }
-    makePlotly(x,y);
-}
-
-function makePlotly(x,y){
-    var plotDiv = document.getElementById("plot");
-    var traces = [{
-        x: x,
-        y: y
-    }];
-    var customize = {
-        title: 'United States\' COVID-19 Cases', 
-        showlegend: false
-    };
-    var config = {
-        responsive: true,
-        displayModeBar: false
-    };
-
-    Plotly.newPlot('my-graph', traces, customize, config);
-};
-
-makeplot();
-
-                </script>
-            </div>
-            <div class="col-sm-2"></div>
-        </div>
-        <footer class="graph-citation blockquote-footer space-row"><a href="https://github.com/nytimes/covid-19-data" target="_blank">(Source: New York Times Magazine Github)</a></footer>
-    </div>
 
     <div class="container-fluid space-row background-yellow-dark" >
         <h3 style="margin-bottom: 30px">Reasons for Disparity Between Access to Healthcare/Damages of Covid-19</h3>
