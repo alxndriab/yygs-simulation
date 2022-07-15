@@ -120,36 +120,33 @@ makeplot();
         <footer class="graph-citation blockquote-footer space-row"><a href="https://github.com/nytimes/covid-19-data" target="_blank">(Source: New York Times Magazine Github)</a></footer>
     </div>
 
-    <div class="container space-row">
+    <div class="container-fluid space-row background-red-dark" style="margin-top: 40px">
+        <h2 style="margin-bottom: 40px">Looking Further in Data</h2>
         <div class="row grid">
-            <div class="col-sm-4">
-                <img class="icon" id="grid-image1" src="images/TV_Program.png" title="Educational Program Icon" alt="educational program icon" data-toggle="modal" data-target="#image1">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <img class="icon" id="grid-image1" src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ca0da3a6-7466-44ef-8739-aa01c51b0adf/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220715%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220715T212547Z&X-Amz-Expires=86400&X-Amz-Signature=6a1765caeb8b9209258060cda3655774ff84e5671a297fc27d2fc9a6823de1b7&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject" title="Risk Ratios" alt="Risk Ratios" data-toggle="modal" data-target="#image1">
             </div>
-            <div class="col-sm-4">
-                <img class="icon" id="grid-image2" src="images/3D_Printing.png" title="3D Printer Icon" alt="3d printer icon" data-toggle="modal" data-target="#image2">
-            </div>
-            <div class="col-sm-4">
-                <img class="icon" id="grid-image3" src="images/AR.png" title="AR icon" alt="AR icon" data-toggle="modal" data-target="#image3">
+            <div class="col-sm-1"></div>
+
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <img class="icon" id="grid-image2" src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c5caf8f3-e350-460d-b923-503b955cd73f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220715%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220715T213156Z&X-Amz-Expires=86400&X-Amz-Signature=3f87d3581cc3bf331addaa3c2da0a47b91c9d4779d0fbd71b4e397ea88dfd22e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject" title="Distribution of Wealth" alt="Distribution of Wealth" data-toggle="modal" data-target="#image2">
             </div>
 
-            <div class="col-sm-4">
-                <img class="icon" id="grid-image4" src="images/VR.png" title="VR icon" alt="VR icon" data-toggle="modal" data-target="#image4">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <img class="icon" id="grid-image3" src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ce022a52-b8b4-4913-8db4-9505a2756980/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220715%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220715T213356Z&X-Amz-Expires=86400&X-Amz-Signature=335920f2abc509d980a2d6f2594b25badc1e7100c815397d71acae0136bdef6c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject" title="Vaccine Distribution" alt="Vaccine Distribution" data-toggle="modal" data-target="#image3">
             </div>
-            <div class="col-sm-4">
-                <img class="icon" id="grid-image5" src="images/Gameification.png" title="Gameification icon" alt="Gameification icon" data-toggle="modal" data-target="#image5">
-            </div>
-            <div class="col-sm-4">
-                <img class="icon" id="grid-image6" src="images/Learning_Platforms.png" title="Learning Platforms icon" alt="learning platforms icon" data-toggle="modal" data-target="#image6">
-            </div>
+            <div class="col-sm-1"></div>
 
-            <div class="col-sm-4">
-                <img class="icon" id="grid-image7" src="images/AI.png" title="AI icon" alt="AI icon" data-toggle="modal" data-target="#image7">
+            <br>
+
+            <div class="col-sm-6">
+                <img class="icon" id="grid-image4" src="images/Deaths-by-Race-Ethnicity-Chart.png" title="Deaths by Race" alt="Deaths by Race" data-toggle="modal" data-target="#image4">
             </div>
-            <div class="col-sm-4">
-                <img class="icon" id="grid-image8" src="images/Internet.png" title="Internet icon" alt="internet icon" data-toggle="modal" data-target="#image8"> 
-            </div>
-            <div class="col-sm-4">
-                <img class="icon" id="grid-image9" src="images/Online_Communication.png" title="online communication icon" alt="online communication icon" data-toggle="modal" data-target="#image9">
+            <div class="col-sm-6">
+                <img class="icon" id="grid-image5" src="images/Cases-by-Race-Ethnicity-Chart.png" title="Cases by Race" alt="Cases by Race" data-toggle="modal" data-target="#image5">
             </div>
         </div>
     </div>
@@ -159,14 +156,17 @@ makeplot();
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">x</button>
-                    <h4 class="modal-title"> Educational Programs</h4>
+                    <h4 class="modal-title">Risk Ratios</h4>
                 </div>
                 <div class="modal-body">
-                    <p>Parents often say that TV isn’t educational and will melt your brain, figuratively of course. But that isn’t true. Today we have many educational channels like PBS and National Geographic. But it was much earlier that this began. 
-                        The Ford Foundation was important in the creation of educational TV. In the 1950s, television started to be considered for a teaching device, even setting aside 242 educational channels”. Although later in the 1980s it lost traction and funding thanks to the highly favored computers.
-                        “U.S. Commissioner of Education Earl James McGrath, declared, ‘Through the use of television, educational institutions will be able to bring the greatest teachers, the finest artists, scientists, and philosophers into schools and homes.’”
+                    <p>Shown are the Risk Ratios. Risk Ratios a measure of the risk of a certain event happening in one group compared to the risk of the same event happening in another group. Ranges are confidence intervals made at the 95% confidence level.
+                    <br><br>Sampling Data
+                    <br>- 370,933 patients were African American (8.6%)
+                    <br>- 101,793 were Asian American (2.4%)
+                    <br>- 851,392 were Hispanic/Latino (19.7%)
+                    <br>- 1,037,996 were White (24%)
                         </p>
-                        <footer class="image-citation blockquote-footer"><a href="https://www.encyclopedia.com/social-sciences/culture-magazines/1950s-education-topics-news" target="_blank">(Source: Encyclopedia.com)</a></footer>
+                        <footer class="image-citation blockquote-footer"><a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2785980#zoi210960t1" target="_blank">(Source: JAMA Network)</a></footer>
                 </div>
             </div>
         </div>
@@ -177,11 +177,13 @@ makeplot();
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">x</button>
-                    <h4 class="modal-title">3D Printers</h4>
+                    <h4 class="modal-title">Distribution of Wealth</h4>
                 </div>
                 <div class="modal-body">
-                    <p>In 2020, with the influx of advancements in technology, there is an increasing need of engineers. Technology like the 3D printer can help with the education & development of trade skills.  “...we also need new education and training programs to raise a new generation of industrial designers".</p>
-                    <footer class="image-citation blockquote-footer"><a href="https://www.forbes.com/sites/marcoannunziata/2019/12/17/2020-the-year-ahead-in-3d-printing/?sh=1db6e551407f" target="_blank">(Source: Forbes)</a></footer>
+                    <p>Gini Coefficient: statistical measure to represent to what extent the distribution of income or wealth among individuals or households within an economy deviates from perfect equality. 
+                    <br>Ranges are confidence intervals made at the 95% confidence level
+                        </p>
+                        <footer class="image-citation blockquote-footer"><a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2785980#zoi210960t1" target="_blank">(Source: JAMA Network)</a></footer>
                 </div>
             </div>
         </div>
@@ -192,11 +194,13 @@ makeplot();
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">x</button>
-                    <h4 class="modal-title">Augmented Reality</h4>
+                    <h4 class="modal-title">Vaccine Distribution</h4>
                 </div>
                 <div class="modal-body">
-                    <p>AR has made great strides in recent years, and therefore its abilities in education have too. “Autodesk has recently been 3D scanning the historic Apollo 11 lunar module, which has slowly been degrading over time. Capturing that data allows us to preserve a digital copy of the Apollo 11 — but more importantly it allows us to share it with others for educational purposes. When combined with AR and VR capabilities, this means students in classrooms around the country — and around the world — can virtually step into the Apollo 11 and experience it for themselves".</p>
-                    <footer class="image-citation blockquote-footer"><a href="http://autodesk.blogs.com/between_the_lines/2015/12/3d-scanning-apollo-11-at-the-smithsonian.html" target="_blank">(Source: Autodesk)</a></footer>
+                    <p>- Vaccine distribution among different races
+                    <br>- Taken from data of 36 states
+                        </p>
+                    <footer class="image-citation blockquote-footer"><a href="https://www.kff.org/coronavirus-covid-19/issue-brief/latest-data-on-covid-19-vaccinations-by-race-ethnicity/#:~:text=Across%20the%2036%20states%20for,for%20Black%20people%20(59%25)." target="_blank">(Source: Kaiser Family Foundation)</a></footer>
                 </div>
             </div>
         </div>
@@ -207,11 +211,11 @@ makeplot();
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">x</button>
-                    <h4 class="modal-title">Virtual Reality</h4>
+                    <h4 class="modal-title">Deaths by Race</h4>
                 </div>
                 <div class="modal-body">
-                    <p>VR has the capability to technically transport you into a new world which helps engagement in a lesson thanks to the virtual hands-on interaction. It helps students by providing an immersive, interactive experience. For one, it has helped students with autism and other learning difficulties, “A 2007 study showed that children with autism could effectively apply skills they had learned in a virtual environment — like fire and street/road safety — to the real world”. And VR can also help with social and communication skills. A start-up called Floreo uses VR technology to help students with autism practice interacting with others and more.</p>
-                    <footer class="image-citation blockquote-footer"><a href="https://www.cbinsights.com/research/back-to-school-tech-transforming-education-learning-post-covid-19/" target="_blank">(Source: CB Insights)</a></footer>
+                    <p>By the standard deviation, it shows that the ratio deaths by race are equal to the ratio of the race to the total population</p>
+                    <footer class="image-citation blockquote-footer"><a href="https://covid.cdc.gov/covid-data-tracker/#demographics" target="_blank">(Source: CDC Data Tracker)</a></footer>
                 </div>
             </div>
         </div>
@@ -222,79 +226,22 @@ makeplot();
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">x</button>
-                    <h4 class="modal-title">Gameification</h4>
+                    <h4 class="modal-title">Cases by Race</h4>
                 </div>
                 <div class="modal-body">
-                    <p>Games are at least one of kids’ favorite things, and gamification has brought gaming into education. An app called Duolingo utilizes gaming to teach languages. A feature of duolingo is its “timed task-based game” with rewards and varying levels. However, there is some debate about how gamification really impacts students, “While educators are likely to focus on how gamification keeps students engaged and self-motivated, critics point out that embedding entertainment into learning can make students more easily distracted”. Still though, it has definitely impacted the way we learn. And although we don’t know its long-term effects, - if used right it - it provides a nice break from regular school work.</p>
-                    <footer class="image-citation blockquote-footer"><a href="https://www.cbinsights.com/research/back-to-school-tech-transforming-education-learning-post-covid-19/" target="_blank">(Source: CB Insights)</a></footer>
+                    <p>By the standard deviation, it shows that the ratio cases by race are NOT equal to the ratio of the race to the total population</p>
+                    <footer class="image-citation blockquote-footer"><a href="https://covid.cdc.gov/covid-data-tracker/#demographics" target="_blank">(Source: CDC Data Tracker)</a></footer>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="image6" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">x</button>
-                    <h4 class="modal-title">Learning Platforms</h4>
-                </div>
-                <div class="modal-body">
-                    <p>As is common knowledge, 2020 has totally changed education. So, education had to adapt. And in that adaption came the spectacular rise of learning platforms like Canvas. Canvas is similar to google classroom - an organization tool for students; for assignments, announcements, classes, etc.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="image7" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">x</button>
-                    <h4 class="modal-title">Artificial Intelligence</h4>
-                </div>
-                <div class="modal-body">
-                    <p>“The education industry is experimenting with artificial intelligence (AI) applications…”
-                        AI can also prove helpful for students in overcoming language barriers in education. For example, Microsoft’s Presentation Translator is an AI tool that provides real-time subtitles for presentations and lectures. Students can hear or read these in their native language.
-                        </p>
-                    <footer class="image-citation blockquote-footer"><a href="https://www.cbinsights.com/research/back-to-school-tech-transforming-education-learning-post-covid-19/" target="_blank">(Source: CB Insights)</a></footer>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="image8" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">x</button>
-                    <h4 class="modal-title">Internet</h4>
-                </div>
-                <div class="modal-body">
-                    <p>This has been an element in some of the other topics here, but the internet was also actually invented in the 20th century. It helped launch future innovations like the previously mentioned computer.“The Internet is also one of the most useful and remarkable inventions of the 20th century. Today, computers are used in nearly all fields like in education, defense, robotics, banking, telecommunication, etc".</p>
-                    <footer class="image-citation blockquote-footer"><a href="https://historyplex.com/inventions-of-20th-century#:~:text=The%20Internet%20is%20also%20one%20of%20the%20most,1977%2C%20made%20communication%20easier%2C%20quicker%2C%20and%20more%20comfortable." target="_blank">(Source: History Plex)</a></footer>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="image9" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">x</button>
-                    <h4 class="modal-title">Online Communication</h4>
-                </div>
-                <div class="modal-body">
-                    <p>In 2020 through early 2021, students have been forced to stay home for the most part. And the ways students have connected have changed. It is now through online video calls, like Zoom. To put it simply, apps like Zoom skyrocketed. This is shown when Zoom went from 10 million daily users in December of 2020 to over 300 million daily users around April of 2020. And it is still being used daily in 2021. Needless to say, online communication like Zoom plays a heavy role in keeping the school community connected.</p>
-                    <footer class="image-citation blockquote-footer"><a href="https://www.theverge.com/2020/4/23/21232401/zoom-300-million-users-growth-coronavirus-pandemic-security-privacy-concerns-response" target="_blank">(Source: The Verge)</a></footer>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid space-row bottom-education">
+    <div class="container-fluid space-row bottom-education background-blue-dark">
         <h4>In summation, there have been a lot more technical advancements in education in recent years, especially with the current pandemic. Today, variety is insane. However, inventions in our grandparents’ time shouldn’t be overlooked. They were the foundation of today’s inventions. For instance the beginning of educational programs helped support other ways of education besides just school. It was so new to think that TV could teach, yet today even video game technology like AR, VR and gamification can be found in use for education!</h4>
     </div>
+    <p>
+    <a href="https://www.instagram.com/ppap.yygs/"><img style="max-width: 30px;" src="https://www.freepngimg.com/download/computer/68394-computer-instagram-icons-png-file-hd.png" alt="Instagram"></a>
+    © Created by Shimnu Jiang, Alexandria Balde, Dylan Conard, Ethan Tan
+    </p>
 </body>
 </html>
