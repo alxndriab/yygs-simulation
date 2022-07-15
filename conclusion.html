@@ -1,7 +1,7 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Education</title>
+    <title>Healthcare</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,8 +9,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
     <link rel="stylesheet" href="styles\style1.css"/>
 </head>
+
 
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -39,196 +42,52 @@
         <img src="images/TECH200.png" title="Cover Image" alt="Artsy bright background">
         <div class="cover-box">    
             <h2>Covid-19 Healthcare</h2>
-            <h2>Conclusion</h2>
+            <h2>Conclusions</h2>
         </div>
     </div>
 
     <div class="container space-row"> 
-        <h2 id="header">School</h2>
         <div class="row" >
-            <div class="col-sm-3"></div>
-            <div class="container col-sm-6 blue-box" id="red-box">
-                <p>They say that children are the future. And it is thanks to the advancements in technology that humanity continues to evolve their education for students. Education-focused unions and organizations have been developing since the Antebellum Era. And each year, the new devices, techniques, digitalization, and forms of communication and work progress into more efficient and creative-stimulating works to engage the future creators. Here are a few monumental technologies.</p>    
+            <div class="col-sm-4">
+                <img class="point" src="images/speaker.png" alt="someone speaking icon" title="Speaker Icon">
             </div>
-            <div class="col-sm-3"></div>
+            <div class="col-sm-8">
+                <div class="container blue-box grid-box" id="red-box">
+                    <h3>What can you do to make sure the government responds better?</h3>
+                    <br>
+                    <p>VOTE! While it might seem obvious, your ability to vote for representatives that care about healthcare precautions and racial equity is vital. And spread the word. Inform others of the reprecussions of this pandemic in order to ensure that minorities aren't disproportionately affected by major pandemics in the future or even epidemics.</p>
+                    <p>Tell your representative that it matters. Be sure to name specific details in emails or complaints. Tell them that there needs to be a rapid-response plan to an outbreak. Tell them that ethics boards need to be consulted when creating that plan. Tell them that ensuring equity among all communities must be supervised.</p>
+                    <p>Attend or organize local ralleys in order to support legislation that would safeguard against disparities in healthcare treatments for minority communities. You are not alone in this fight, so never advocate alone. Reach out to organizations that also support these safeguards.</p>
+                </div>
+            </div>
         </div>  
     </div>
 
-    <div class="container space-row">
-        <div class="row grid">
-            <div class="col-sm-4">
-                <img class="icon" id="grid-image1" src="images/TV_Program.png" title="Educational Program Icon" alt="educational program icon" data-toggle="modal" data-target="#image1">
-            </div>
-            <div class="col-sm-4">
-                <img class="icon" id="grid-image2" src="images/3D_Printing.png" title="3D Printer Icon" alt="3d printer icon" data-toggle="modal" data-target="#image2">
-            </div>
-            <div class="col-sm-4">
-                <img class="icon" id="grid-image3" src="images/AR.png" title="AR icon" alt="AR icon" data-toggle="modal" data-target="#image3">
-            </div>
-
-            <div class="col-sm-4">
-                <img class="icon" id="grid-image4" src="images/VR.png" title="VR icon" alt="VR icon" data-toggle="modal" data-target="#image4">
+    <div class="container-fluid space-row background-blue-dark"> 
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="container blue-box grid-box">
+                    <h3>How can this be applied to other countries?</h3>
+                    <br>
+                    <p>Similar methods can be used globally. The most significant one, though, would be improving the technological infrastructure, especially in developing countries. By ensuring doctors have a universal database to identify what areas need assistance and what areas have been vaccinated are vital. It also helps sending medical resources to areas more efficient and impactful if they know where to go. So investing in these technologies is crucial to future precautions.</p>
+                    <p>Also, education campaigns are vital. Ensuring that everyone knows when to social distance, why to social distance, and how to social distance is super important. Getting information out, and fast to people is how we can stop the spread quickly and efficiently.</p>
+                    <p>Lastly, we have to make sure we recognize and support the populations that are disproportionately affected and help them. Distributing PPE to doctors on the ground, donating technology to kids so they can continue schooling, and funding low-income areas to help them through tough times.</p>
+                </div>
             </div>
             <div class="col-sm-4">
-                <img class="icon" id="grid-image5" src="images/Gameification.png" title="Gameification icon" alt="Gameification icon" data-toggle="modal" data-target="#image5">
+                <img class="point" src="images/microphone.png" alt="microphone icon" title="Microphone Icon">
             </div>
-            <div class="col-sm-4">
-                <img class="icon" id="grid-image6" src="images/Learning_Platforms.png" title="Learning Platforms icon" alt="learning platforms icon" data-toggle="modal" data-target="#image6">
-            </div>
-
-            <div class="col-sm-4">
-                <img class="icon" id="grid-image7" src="images/AI.png" title="AI icon" alt="AI icon" data-toggle="modal" data-target="#image7">
-            </div>
-            <div class="col-sm-4">
-                <img class="icon" id="grid-image8" src="images/Internet.png" title="Internet icon" alt="internet icon" data-toggle="modal" data-target="#image8"> 
-            </div>
-            <div class="col-sm-4">
-                <img class="icon" id="grid-image9" src="images/Online_Communication.png" title="online communication icon" alt="online communication icon" data-toggle="modal" data-target="#image9">
-            </div>
-        </div>
+        </div>  
     </div>
 
-    <div id="image1" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">x</button>
-                    <h4 class="modal-title"> Educational Programs</h4>
-                </div>
-                <div class="modal-body">
-                    <p>Parents often say that TV isn’t educational and will melt your brain, figuratively of course. But that isn’t true. Today we have many educational channels like PBS and National Geographic. But it was much earlier that this began. 
-                        The Ford Foundation was important in the creation of educational TV. In the 1950s, television started to be considered for a teaching device, even setting aside 242 educational channels”. Although later in the 1980s it lost traction and funding thanks to the highly favored computers.
-                        “U.S. Commissioner of Education Earl James McGrath, declared, ‘Through the use of television, educational institutions will be able to bring the greatest teachers, the finest artists, scientists, and philosophers into schools and homes.’”
-                        </p>
-                        <footer class="image-citation blockquote-footer"><a href="https://www.encyclopedia.com/social-sciences/culture-magazines/1950s-education-topics-news" target="_blank">(Source: Encyclopedia.com)</a></footer>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="image2" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">x</button>
-                    <h4 class="modal-title">3D Printers</h4>
-                </div>
-                <div class="modal-body">
-                    <p>In 2020, with the influx of advancements in technology, there is an increasing need of engineers. Technology like the 3D printer can help with the education & development of trade skills.  “...we also need new education and training programs to raise a new generation of industrial designers".</p>
-                    <footer class="image-citation blockquote-footer"><a href="https://www.forbes.com/sites/marcoannunziata/2019/12/17/2020-the-year-ahead-in-3d-printing/?sh=1db6e551407f" target="_blank">(Source: Forbes)</a></footer>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="image3" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">x</button>
-                    <h4 class="modal-title">Augmented Reality</h4>
-                </div>
-                <div class="modal-body">
-                    <p>AR has made great strides in recent years, and therefore its abilities in education have too. “Autodesk has recently been 3D scanning the historic Apollo 11 lunar module, which has slowly been degrading over time. Capturing that data allows us to preserve a digital copy of the Apollo 11 — but more importantly it allows us to share it with others for educational purposes. When combined with AR and VR capabilities, this means students in classrooms around the country — and around the world — can virtually step into the Apollo 11 and experience it for themselves".</p>
-                    <footer class="image-citation blockquote-footer"><a href="http://autodesk.blogs.com/between_the_lines/2015/12/3d-scanning-apollo-11-at-the-smithsonian.html" target="_blank">(Source: Autodesk)</a></footer>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="image4" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">x</button>
-                    <h4 class="modal-title">Virtual Reality</h4>
-                </div>
-                <div class="modal-body">
-                    <p>VR has the capability to technically transport you into a new world which helps engagement in a lesson thanks to the virtual hands-on interaction. It helps students by providing an immersive, interactive experience. For one, it has helped students with autism and other learning difficulties, “A 2007 study showed that children with autism could effectively apply skills they had learned in a virtual environment — like fire and street/road safety — to the real world”. And VR can also help with social and communication skills. A start-up called Floreo uses VR technology to help students with autism practice interacting with others and more.</p>
-                    <footer class="image-citation blockquote-footer"><a href="https://www.cbinsights.com/research/back-to-school-tech-transforming-education-learning-post-covid-19/" target="_blank">(Source: CB Insights)</a></footer>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="image5" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">x</button>
-                    <h4 class="modal-title">Gameification</h4>
-                </div>
-                <div class="modal-body">
-                    <p>Games are at least one of kids’ favorite things, and gamification has brought gaming into education. An app called Duolingo utilizes gaming to teach languages. A feature of duolingo is its “timed task-based game” with rewards and varying levels. However, there is some debate about how gamification really impacts students, “While educators are likely to focus on how gamification keeps students engaged and self-motivated, critics point out that embedding entertainment into learning can make students more easily distracted”. Still though, it has definitely impacted the way we learn. And although we don’t know its long-term effects, - if used right it - it provides a nice break from regular school work.</p>
-                    <footer class="image-citation blockquote-footer"><a href="https://www.cbinsights.com/research/back-to-school-tech-transforming-education-learning-post-covid-19/" target="_blank">(Source: CB Insights)</a></footer>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="image6" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">x</button>
-                    <h4 class="modal-title">Learning Platforms</h4>
-                </div>
-                <div class="modal-body">
-                    <p>As is common knowledge, 2020 has totally changed education. So, education had to adapt. And in that adaption came the spectacular rise of learning platforms like Canvas. Canvas is similar to google classroom - an organization tool for students; for assignments, announcements, classes, etc.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="image7" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">x</button>
-                    <h4 class="modal-title">Artificial Intelligence</h4>
-                </div>
-                <div class="modal-body">
-                    <p>“The education industry is experimenting with artificial intelligence (AI) applications…”
-                        AI can also prove helpful for students in overcoming language barriers in education. For example, Microsoft’s Presentation Translator is an AI tool that provides real-time subtitles for presentations and lectures. Students can hear or read these in their native language.
-                        </p>
-                    <footer class="image-citation blockquote-footer"><a href="https://www.cbinsights.com/research/back-to-school-tech-transforming-education-learning-post-covid-19/" target="_blank">(Source: CB Insights)</a></footer>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="image8" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">x</button>
-                    <h4 class="modal-title">Internet</h4>
-                </div>
-                <div class="modal-body">
-                    <p>This has been an element in some of the other topics here, but the internet was also actually invented in the 20th century. It helped launch future innovations like the previously mentioned computer.“The Internet is also one of the most useful and remarkable inventions of the 20th century. Today, computers are used in nearly all fields like in education, defense, robotics, banking, telecommunication, etc".</p>
-                    <footer class="image-citation blockquote-footer"><a href="https://historyplex.com/inventions-of-20th-century#:~:text=The%20Internet%20is%20also%20one%20of%20the%20most,1977%2C%20made%20communication%20easier%2C%20quicker%2C%20and%20more%20comfortable." target="_blank">(Source: History Plex)</a></footer>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="image9" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">x</button>
-                    <h4 class="modal-title">Online Communication</h4>
-                </div>
-                <div class="modal-body">
-                    <p>In 2020 through early 2021, students have been forced to stay home for the most part. And the ways students have connected have changed. It is now through online video calls, like Zoom. To put it simply, apps like Zoom skyrocketed. This is shown when Zoom went from 10 million daily users in December of 2020 to over 300 million daily users around April of 2020. And it is still being used daily in 2021. Needless to say, online communication like Zoom plays a heavy role in keeping the school community connected.</p>
-                    <footer class="image-citation blockquote-footer"><a href="https://www.theverge.com/2020/4/23/21232401/zoom-300-million-users-growth-coronavirus-pandemic-security-privacy-concerns-response" target="_blank">(Source: The Verge)</a></footer>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid space-row bottom-education">
-        <h4>In summation, there have been a lot more technical advancements in education in recent years, especially with the current pandemic. Today, variety is insane. However, inventions in our grandparents’ time shouldn’t be overlooked. They were the foundation of today’s inventions. For instance the beginning of educational programs helped support other ways of education besides just school. It was so new to think that TV could teach, yet today even video game technology like AR, VR and gamification can be found in use for education!</h4>
+    <div class="lg-space-row">
+        <h3>Moving Forward:</h3>
+        <br>
+        <h4>
+            By working together, being smart, and being prepared, billions of people will not have to suffer through a half-decade long pandemic. While we might not be able to completely stop epidemics and pandemics from occuring, we can make sure that we act quick and ensure it doesn't spread. It is Post Pandemic Administration Policy. We learn from the pandemic and we implement policies to prepare ourselves.
+        </h4>
+        <br>
+        <footer>Further reading: <a href="https://www.brookings.edu/blog/future-development/2020/06/04/developing-countries-can-respond-to-covid-19-in-ways-that-are-swift-at-scale-and-successful/" target="_blank">Brookings</a> and <a href="https://www.jstor.org/stable/resrep25616#metadata_info_tab_contents" target="_blank">JSTOR</a></footer>
     </div>
 </body>
 </html>
